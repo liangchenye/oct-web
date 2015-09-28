@@ -1,6 +1,6 @@
 {
-  "name": "wharf",
-  "version": "0.3.1",
+  "name": "oct",
+  "version": "0.0.1",
   "dependencies": {
     "jquery": "~2.1.4",
     "angular": "1.4.x",

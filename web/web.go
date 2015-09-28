@@ -6,7 +6,7 @@ import (
 	"github.com/Unknwon/macaron"
 )
 
-func SetWharfMacaron(m *macaron.Macaron) {
+func SetOCTMacaron(m *macaron.Macaron) {
 
 	middleware.SetMiddlewares(m)
 

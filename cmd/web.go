@@ -11,7 +11,7 @@ import (
 var CmdWeb = cli.Command{
 	Name:        "web",
 	Usage:       "start oct web service",
-	Description: "oct is the module of handler docker repository and rkt image.",
+	Description: "oct-web is the web interface of the OCT project.",
 	Action:      runWeb,
 	Flags: []cli.Flag{
 		cli.StringFlag{
@@ -30,7 +30,7 @@ var CmdWeb = cli.Command{
 func runWeb(c *cli.Context) {
 	m := macaron.New()
 
-	web.SetWharfMacaron(m)
+	web.SetOCTMacaron(m)
 
 	listenaddr := fmt.Sprintf("%s:%d", c.String("address"), c.Int("port"))
 	fmt.Println("Start to listen ", listenaddr)

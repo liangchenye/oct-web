@@ -1,46 +1,89 @@
-<!DOCTYPE html>
-<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
-<!--[if IE 9]> <html class="no-js lt-ie10"> <![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
-  <head>
+<!doctype html>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-
-    <title>Open Container Testing</title>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-   
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
-
-    
-         <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen">
-         <link rel="stylesheet" type="text/css" href="/bower_components/flat-ui/dist/css/flat-ui.min.css" media="screen">
-         <link rel="stylesheet" type="text/css" href="/bower_components/font-awesome/css/font-awesome.min.css">
-
-
-  </head>
-  <body ng-app="index">
-
-
-  	<h1>Welcome to  OCT home</h1>
-
-     <!-- Index Container  -->
-    <!-- <div id="index-container" class="vertical-middle animation-fadeIn col-lg-4 col-lg-offset-4  col-md-4 col-md-offset-4  col-sm-4 col-sm-offset-4 col-xs-12"> -->
-
-          <!-- Index Title -->
-          <!-- <div class="index-title text-center"> -->
-
-          <!-- </div> -->
-            <!-- END Index Title -->
-
-          <!-- <div class="block push-bit" ng-view></div> -->
-          <!-- <div growl></div> -->
-      
-   <!-- </div> -->
-   
-      <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
-      <script type="text/javascript" src="/bower_components/angular-route/angular-route.min.js"></script>
-       <script type="text/javascript" src="/bower_components/angular-messages/angular-messages.min.js"></script>
-       <script type="text/javascript" src="/bower_components/angular-cookies/angular-cookies.min.js"></script> 
-       <script type="text/javascript" src="/bower_components/angular-growl-v2/build/angular-growl.min.js"></script> 
-      <script type="text/javascript" src="/javascript/auth.js"></script>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OCT</title>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="/img/logo/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="container" id="home">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand link" href="#home">OCT</a>
+            </div>
+            <p class="navbar-text navbar-right">
+                <a href="https://github.com/huawei-openlab/oct/" class="navbar-link link link-github">GITHUB</a>
+                <span class="separator"></span>
+                <a href="https://github.com/huawei-openlab/oct/blob/master/README.md" class="navbar-link link link-docs">DOCS</a>
+            </p>
+        </div>
+    </nav>
+    <div class="row introduction">
+        <div class="col-md-12">
+            <img src="/img/main.png" class="logo" width="900">
+            <h2>The open container testing framework.<br> Aims to promote open container initiative</h2>
+        </div>
+    </div>
+    <div class="row polygons">
+        <div class="col-md-12">
+            <div class="polygon polygon-1">
+                <h3>Scopes</h3>
+		<p class="paragraph-1">The open container testing framework covers 4 parts:</p>
+		<p class="paragraph-2">Verify if a image or a runtime was complicant with the <a href="https://github.com/opencontainers/specs">OCI standard.</a> </p>
+		<p class="paragraph-2">Test the io/network and other benchmark of running a container. </p>
+		<p class="paragraph-2">Make sure if a container runtime was fragile to the security attack.</p>
+		<p class="paragraph-4">Better understand the function of each container. </p>
+                <img src="/img/background/3.jpg" width="374">
+            </div>
+            <div class="polygon polygon-2">
+                <h3>Architecture</h3>
+		<p>The whole OCT including three main components. </p>
+		<p>Tools: open source tools used to test the most popular container products.</p>
+		<p>Case: Well defined specification with json format. Any case developers could write his/her own test case, either by his/her own tool or by the 'OCT tools'.</p>
+		<p>Engine: micro service, receive testcase, deploy to the according host operation system and container and run it. Collect and generate a readable test report.</p>
+            </div>
+            <div class="polygon polygon-5">
+                <h3>Tools</h3>
+                <img src="/img/tools.jpg" width="200" height="130" align="right">
+		<p>Bundle Validator: verify if a image/bundle was a <a href="https://github.com/huawei-openlab/oct#standard-container">standard container.</a> 
+		<p>Runtime Validator: verify if a runtime was compliant with <a href="https://github.com/opencontainers/specs">OCI standard.</a> </p>
+		<p>Cadvisor/iperf: performance tools from community.</p>
+            </div>
+            <div class="polygon polygon-4">
+                <h3>Cases</h3>
+		<p>The<a href="https://github.com/huawei-openlab/oct-engine/blob/master/cases/README.md">Case</a> is easy to develop and maintain.</p>
+		<p>Using the 'case generator' tool and 'case validator' tool to make life eaiser. </p>
+		<p>Using the official casedb or<a href="https://github.com/huawei-openlab/oct-engine/blob/master/services/tcserver/README.md"> maintain own db. </a> are both OK.</p>
+            </div>
+            <div class="polygon polygon-3">
+		    <h3>Engine</h3>
+		    <img src="/img/test_framework.png" width="440">
+	    </div>
+        </div>
+    </div>
+    <div class="row links">
+        <div class="col-md-12">
+            <h2>Take part in developping OCT, join us.</h2>
+            <a href="https://github.com/huawei-openlab/oct/" class="btn btn-default btn-github">GITHUB</a>
+            <span class="separator"></span>
+            <a href="https://github.com/huawei-openlab/oct/blob/master/README.md" class="btn btn-default btn-docs">DOCS</a>
+        </div>
+    </div>
+    <div class="row footer">
+        <div class="separator-hr"></div>
+        <div class="col-md-6">
+		<img src="/img/logo/favicon.ico" width="32"> <a href="https://github.com/huawei-openlab/">Join</a>
+        </div>
+        <div class="col-md-6">
+		<p class="copyright">Copyright &copy; 2015 Hua Wei Openlab. All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+</body>
 </html>
