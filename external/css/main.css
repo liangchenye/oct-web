@@ -1,31 +1,23 @@
 @font-face {
-  font-family: "Dosis";
-  src: url("../fonts/Dosis-SemiBold.otf");
 }
 @font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato-Regular.ttf");
 }
 html {
-  background: url('../img/mantl-bg-gradient.png') no-repeat top center;
   background-size: 1000px 3500px;
   height: 100%;
 }
 @media (max-width: 768px) {
   html {
-    background: url('../img/mantl-bg-gradient-mobile.png') no-repeat top center;
     background-size: 768px 4200px;
   }
 }
 body {
-  background: url('../img/mantl-bg-mesh.png') no-repeat top center;
   background-size: 2500px 3500px;
   min-height: 100%;
   margin: 0;
 }
 @media (max-width: 768px) {
   body {
-    background: url('../img/mantl-bg-mesh-mobile.png') no-repeat top center;
     background-size: 768px 4200px;
   }
 }
@@ -128,11 +120,10 @@ h2 {
 }
 .polygons .polygon p {
   font-family: Lato;
-  color: #ffffff;
+  color: #000000;
   font-size: 13pt;
 }
 .polygons .polygon.polygon-1 {
-  background: url('../img/polygon-1.png') no-repeat;
   background-size: 820px 580px;
   width: 820px;
   height: 580px;
@@ -168,7 +159,6 @@ h2 {
   }
 }
 .polygons .polygon.polygon-2 {
-  background: url('../img/polygon-2.png') no-repeat;
   background-size: 530px 530px;
   width: 530px;
   height: 530px;
@@ -184,7 +174,6 @@ h2 {
   width: 462px;
 }
 .polygons .polygon.polygon-3 {
-  background: url('../img/polygon-3.png') no-repeat;
   background-size: 629px 562px;
   width: 629px;
   height: 562px;
@@ -206,7 +195,6 @@ h2 {
   }
 }
 .polygons .polygon.polygon-4 {
-  background: url('../img/polygon-4.png') no-repeat;
   background-size: 457px 404px;
   width: 457px;
   height: 404px;
@@ -221,7 +209,6 @@ h2 {
   width: 410px;
 }
 .polygons .polygon.polygon-5 {
-  background: url('../img/polygon-5.png') no-repeat;
   background-size: 458px 458px;
   width: 458px;
   height: 458px;
@@ -237,7 +224,6 @@ h2 {
   width: 415px;
 }
 .polygons .polygon.polygon-6 {
-  background: url('../img/polygon-6.png') no-repeat;
   background-size: 447px 337px;
   width: 447px;
   height: 337px;
