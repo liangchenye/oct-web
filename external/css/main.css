@@ -42,11 +42,8 @@ body > .container {
 .link:hover {
   text-decoration: underline !important;
 }
-.caps {
-  text-transform: uppercase;
-}
 .navbar {
-  background-color: #333333;
+  background-color: #222222;
   border: none;
   height: 68px !important;
 }
