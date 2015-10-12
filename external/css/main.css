@@ -1,7 +1,12 @@
 @font-face {
+  font-family: "NotoSans-Bold";
+  src: url("../fonts/NotoSans-Bold.ttf")
 }
 @font-face {
+  font-family: "NotoSans-Reg";
+  src: url("../fonts/NotoSans-Regular.ttf")
 }
+
 html {
   background-size: 1000px 3500px;
   height: 100%;
@@ -56,7 +61,7 @@ body > .container {
 }
 .navbar .navbar-brand {
   color: #00ccff !important;
-  font-family: Dosis;
+  font-family: NotoSans-Bold;
   font-size: 18pt;
   line-height: 150%;
 }
@@ -65,11 +70,11 @@ body > .container {
   margin: 0;
   line-height: 150%;
   font-size: 18pt;
-  font-family: Dosis;
+  font-family: NotoSans-Bold;
 }
 .navbar .navbar-text a {
   color: #00ccff !important;
-  font-family: Dosis;
+  font-family: NotoSans-Bold;
   display: inline-block;
 }
 .navbar .navbar-text a.link-github {
@@ -101,7 +106,7 @@ body > .container {
   width: 30px;
 }
 h2 {
-  font-family: Dosis;
+  font-family: NotoSans-Bold;
   color: #ff0031;
   text-transform: uppercase;
 }
@@ -109,13 +114,18 @@ h2 {
   text-align: center;
   margin-top: 50px;
 }
-.logo {
-  max-width: 100%;
+
+.splash {
+  background: url("/img/main.jpg") no-repeat center center;
+  background-size: cover;
+  margin-top: 66px;
+  padding: 300px;
 }
+
 .polygons .polygon h3 {
-  font-family: Lato;
+  font-family: NotoSans-Reg;
   color: #3399ff;
-  font-size: 28pt;
+  font-size: 32pt;
   margin-bottom: 20px;
 }
 .polygons .polygon p {
@@ -266,7 +276,7 @@ h2 {
   margin-top: 100px;
 }
 .links h2 {
-  font-family: Dosis;
+  font-family: NotoSans-Bold;
   color: #000000;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -277,8 +287,8 @@ h2 {
   width: 178px;
   background-color: #333333;
   border: none !important;
-  font-family: Dosis;
-  font-size: 28pt;
+  font-family: NotoSans-Bold;
+  font-size: 32pt;
 }
 .links .btn:hover {
   text-decoration: underline;
@@ -301,7 +311,7 @@ h2 {
 .footer {
   margin-top: 120px;
   padding: 30px 30px 15px 30px;
-  font-family: Lato;
+  font-family: NotoSans-Reg;
   color: #333333;
 }
 .footer .separator-hr {
