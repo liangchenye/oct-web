@@ -106,9 +106,9 @@ body > .container {
   width: 30px;
 }
 h2 {
-  font-family: NotoSans-Bold;
-  color: #ff0031;
-  text-transform: uppercase;
+  font-family: NotoSans-Reg;
+  color: #0099ff;
+  font-size: 32pt;
 }
 .introduction {
   text-align: center;
@@ -121,164 +121,19 @@ h2 {
   margin-top: 66px;
   padding: 300px;
 }
-
-.polygons .polygon h3 {
+h3 {
   font-family: NotoSans-Reg;
   color: #3399ff;
   font-size: 32pt;
   margin-bottom: 20px;
 }
-.polygons .polygon p {
-  color: #000000;
-  font-size: 13pt;
-}
-.polygons .polygon.polygon-1 {
-  background-size: 820px 580px;
-  width: 820px;
-  height: 580px;
-  margin-top: 30px;
-  margin-left: 115px;
-}
-.polygons .polygon.polygon-1 h3 {
-  padding-top: 50px;
-  padding-left: 80px;
-}
-.polygons .polygon.polygon-1 p {
-  padding-left: 80px;
-  width: 650px;
-}
-.polygons .polygon.polygon-1 p.paragraph-1 {
-  width: 70%;
-}
-.polygons .polygon.polygon-1 p.paragraph-2 {
-  width: 40%;
-}
-.polygons .polygon.polygon-1 p.paragraph-3 {
-  width: 44%;
-}
-.polygons .polygon.polygon-1 img {
-  position: absolute;
-  left: 455px;
-  top: 193px;
-}
-@media (max-width: 768px) {
-  .polygons .polygon.polygon-1 img {
-    position: static;
-    max-width: 100%;
-  }
-}
-.polygons .polygon.polygon-2 {
-  background-size: 530px 530px;
-  width: 530px;
-  height: 530px;
-  margin-top: -50px;
-  margin-left: 25px;
-}
-.polygons .polygon.polygon-2 h3 {
-  padding-top: 60px;
-  padding-left: 120px;
-}
-.polygons .polygon.polygon-2 p {
-  padding-left: 80px;
-  width: 462px;
-}
-.polygons .polygon.polygon-3 {
-  background-size: 629px 562px;
-  width: 629px;
-  height: 562px;
-  margin-top: -110px;
-  margin-left: 290px;
-}
-.polygons .polygon.polygon-3 h3 {
-  padding-top: 80px;
-  padding-left: 170px;
-}
-.polygons .polygon.polygon-3 img {
-  padding-left: 33px;
-  max-width: 89%;
-  margin-top: -10px;
-}
-@media (max-width: 768px) {
-  .polygons .polygon.polygon-3 img {
-    max-width: 100%;
-  }
-}
-.polygons .polygon.polygon-4 {
-  background-size: 457px 404px;
-  width: 457px;
-  height: 404px;
-  margin-top: -190px;
-}
-.polygons .polygon.polygon-4 h3 {
-  padding-left: 120px;
-  padding-top: 50px;
-}
-.polygons .polygon.polygon-4 p {
-  padding-left: 80px;
-  width: 410px;
-}
-.polygons .polygon.polygon-5 {
-  background-size: 458px 458px;
-  width: 458px;
-  height: 458px;
-  margin-top: -190px;
-  margin-left: 470px;
-}
-.polygons .polygon.polygon-5 h3 {
-  padding-left: 136px;
-  padding-top: 45px;
-}
-.polygons .polygon.polygon-5 p {
-  padding-left: 90px;
-  width: 415px;
-}
-.polygons .polygon.polygon-6 {
-  background-size: 447px 337px;
-  width: 447px;
-  height: 337px;
-  margin-top: -150px;
-  margin-left: 60px;
-}
-.polygons .polygon.polygon-6 h3 {
-  padding-left: 66px;
-  padding-top: 54px;
-}
-.polygons .polygon.polygon-6 p {
-  padding-left: 66px;
-  width: 394px;
-}
-@media (max-width: 992px) and (min-width: 768px) {
-  .polygons .polygon {
-    zoom: 80%;
-  }
-}
-@media (max-width: 768px) {
-  .polygons .polygon {
-    background: rgba(51, 51, 51, 0.9) !important;
-    width: auto !important;
-    height: auto !important;
-    margin-left: auto !important;
-    margin-top: 40px !important;
-    padding: 20px !important;
-  }
-  .polygons .polygon h3,
-  .polygons .polygon p,
-  .polygons .polygon img {
-    margin-top: 0 !important;
-    padding: 0 !important;
-  }
-  .polygons .polygon p {
-    width: 100% !important;
-  }
-}
 .links {
   text-align: center;
   margin-top: 100px;
 }
-.links h2 {
+.links h3 {
   font-family: NotoSans-Bold;
   color: #000000;
-  text-transform: uppercase;
   margin-bottom: 20px;
 }
 .links .btn {
