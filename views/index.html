@@ -4,55 +4,75 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OCT</title>
-    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <link rel="shortcut icon" href="./img/logo/favicon.ico" type="image/x-icon">
+
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="/img/logo/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body ng-app="index">
 <div>
 <div>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand link" href="#home">OCT</a>
+            <div class="navbar-text">
+                <a class="navbar-link link link-logo" href="/"></a>
             </div>
             <p class="navbar-text navbar-right">
-                <a href="https://github.com/huawei-openlab/oct/" class="navbar-link link link-github">github</a>
-                <span class="separator"></span>
-                <a href="https://github.com/huawei-openlab/oct/blob/master/README.md" class="navbar-link link link-docs">Docs</a>
+	      <a href="/"><i class="fa fa-home fa-1x"> Home</i></a>
+              <span class="separator"></span>
+	      <a href="/news"><i class="fa fa-bolt fa-1x"> News</i></a>
+              <span class="separator"></span>
+<!--    	      <a href="/cases"><i class="fa fa-database fa-1x"> Cases</i></a>
+              <span class="separator"></span>
+-->
+	      <a href="https://github.com/huawei-openlab/oct/"><i class="fa fa-github fa-1x"> Github</i></a>
+	      <span class="separator"></span>
+	      <a href="https://github.com/huawei-openlab/oct/blob/master/README.md"><i class="fa fa-file-text-o fa-1x"> Docs</i></a>
             </p>
         </div>
     </nav>
-    <div class="splash">
+    <div class="head-empty">
+    </div>
+    <div style="background-color:#01ABC2">
+    <div class="container">
+    <div class="row">
+	    <div class="col-md-12 head-splash">
+		    <br>
+		    <h1>Open, Reliable, Inovative</h1>
+		    <p>Dedicated to make a better container world</p>
+        </div>
+    </div>
+    </div>
     </div>
 </div>
 <div class="container">
-	<h2>The open container testing framework.<br> Aims to promote open container initiative. <br><br></h2>
+    <div class="row introduction">
+	    <h2>Open container test</h2>
+    </div>
     <div class="row">
             <div class="col-md-6">
-                <h3>Scopes</h3>
+                <h3>Introduction</h3>
+		<p>The whole OCT including three main components. </p>
+		<p>Tools: open source tools used to test the most popular container products.</p>
+		<p>Case: Well defined specification with json format. Any case developers could write his/her own test case, either by his/her own tool or by the 'OCT tools'.</p>
+		<p>Engine: micro service, receive testcase, deploy to the according host operation system and container and run it. Collect and generate a readable test report.</p>
+	</div>
+	<div class="col-md-6">
+                <img src="/img/summary.jpg" width="400">
+            </div>
+        </div>
+    <div class="row">
+	<div class="col-md-6">
+                <img src="/img/certification.jpg" width="400">
+        </div>
+        <div class="col-md-6">
+                <h3>Scope</h3>
 		<p class="paragraph-1">The open container testing framework covers 4 parts:</p>
 		<p class="paragraph-2">Verify if a image or a runtime was complicant with the <a href="https://github.com/opencontainers/specs">OCI standard.</a> </p>
 		<p class="paragraph-2">Test the io/network and other benchmark of running a container. </p>
 		<p class="paragraph-2">Make sure if a container runtime was fragile to the security attack.</p>
 		<p class="paragraph-4">Better understand the function of each container. </p>
-	</div>
-	<div class="col-md-6">
-                <img src="./img/background/3.jpg" width="374">
-            </div>
-        </div>
-    <div class="row">
-	<div class="col-md-6">
-                <img src="./img/background/1.jpg" width="374">
-        </div>
-        <div class="col-md-6">
-                <h3>Architecture</h3>
-		<p>The whole OCT including three main components. </p>
-		<p>Tools: open source tools used to test the most popular container products.</p>
-		<p>Case: Well defined specification with json format. Any case developers could write his/her own test case, either by his/her own tool or by the 'OCT tools'.</p>
-		<p>Engine: micro service, receive testcase, deploy to the according host operation system and container and run it. Collect and generate a readable test report.</p>
         </div>
     </div>
     <div class="row">
@@ -63,12 +83,12 @@
 		<p>Cadvisor/iperf: performance tools from community.</p>
             </div>
 	    <div class="col-md-5">
-                <img src="./img/tools.jpg" width="400" height="330" align="left">
+                <img src="/img/tools.jpg" width="400" height="330" align="left">
 	</div>
     </div>
     <div class="row">
 	    <div class="col-md-6">
-		    <img src="./img/background/2.jpg" width="374">
+		    <img src="/img/case.jpg" width="400">
 	    </div>
 	    <div class="col-md-6">    
 	    <h3>Cases</h3>
@@ -86,26 +106,22 @@
 		    <p>The scheduler server: organize test cases and collect result</p>
 	    </div>
 	    <div class="col-md-6">
-		    <img src="./img/test_framework.png" width="440">
+		    <img src="/img/test_framework.png" width="440">
 	    </div>
     </div>
     </div>
-    <div class="row links">
-        <div class="col-md-12">
-            <h3>Take part in developping OCT, join us.</h3>
-            <a href="https://github.com/huawei-openlab/oct/" class="btn btn-default btn-github">GITHUB</a>
-            <span class="separator"></span>
-            <a href="https://github.com/huawei-openlab/oct/blob/master/README.md" class="btn btn-default btn-docs">DOCS</a>
-        </div>
-    </div>
-    <div class="row footer">
-        <div class="separator-hr"></div>
-        <div class="col-md-6">
-		<img src="./img/logo/favicon.ico" width="32"> <a href="https://github.com/huawei-openlab/">Join</a>
-        </div>
-        <div class="col-md-6">
-		<p class="copyright">Copyright &copy; 2015 Hua Wei Openlab. All Rights Reserved.</p>
-        </div>
+    <div class="footer">
+	    <div class="separator-hr"></div>
+	    <div class="row">
+		    <div class="col-md-6">
+			    <span class="separator"></span>
+			    Join OCT
+	      		    <a href="https://github.com/huawei-openlab/oct/" class="btn btn-default btn-github"><i class="fa fa-github fa-1x"> </i></a>
+			    <a href="https://github.com/huawei-openlab/oct/blob/master/README.md" class="btn btn-default btn-docs"><i class="fa fa-file-text-o fa-1x"></i> </a>
+		    </div><div class="col-md-6">
+			    <p class="copyright">Copyright<i class="fa fa-copyright"></i> 2015 Huawei Openlab. All Rights Reserved.</p>
+		    </div>
+	    </div>
     </div>
 </div>
 </div>

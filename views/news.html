@@ -1,0 +1,254 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OCT</title>
+  <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="shortcut icon" href="/img/logo/favicon.ico" type="image/x-icon">
+  </head>
+
+  <body ng-app="news">
+    <div>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-text">
+              <a class="navbar-link link-logo" href="/"></a>
+          </div>
+	  <p class="navbar-text navbar-right">
+	  <a href="/"><i class="fa fa-home fa-1x"> Home</i></a>
+	  <span class="separator"></span>
+	  <a href="/news"><i class="fa fa-bolt fa-1x"> News</i></a>
+	  <span class="separator"></span>
+<!--	  <span class="separator"></span>
+	  <a href="/cases"><i class="fa fa-database fa-1x"> Cases</i></a>
+-->
+	  <a href="https://github.com/huawei-openlab/oct/"><i class="fa fa-github fa-1x"> Github</i></a>
+	  <span class="separator"></span>
+	  <a href="https://github.com/huawei-openlab/oct/blob/master/README.md"><i class="fa fa-file-text-o fa-1x"> Docs</i></a>
+	  </p>
+        </div>
+      </nav>
+
+      <div class="head-empty">
+      </div>
+
+      <div class="container">
+          <section class="news">
+    <div class="grid">
+
+      <div class="unit four-fifths">
+        
+  <article>
+  <h2>
+    <a href="/news/2015/10/13/oct-tools/">
+      OCT tools
+    </a>
+  </h2>
+  <span class="post-category">
+    <span class="label">
+      
+    </span>
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      13 Oct 2015
+    </span>
+    <a href="https://github.com/chengtiesheng" class="post-author">
+      <img src="https://github.com/chengtiesheng.png" class="avatar" alt="chengtiesheng avatar" width="24" height="24">
+      chengtiesheng
+    </a>
+  </div>
+  <div class="post-content">
+    <p>The tools for open container test will be maintained here.</p>
+
+<p><a href="bundleValidator/README.md">bundleValidator</a> - specs/(bundle, config.json, runtime.json)
+The <code>bundleValidator</code> is a <code>rolling release</code> tool which keeps updating with OCI specs.
+It verifies if a <code>bundle</code> was a standard container, if a config.json/runtime.json is a standard configuration file.</p>
+
+<p>The option(genconfig/genruntime) in bundleValidator is used to generate a demo config.json/runtime.json.</p>
+
+<p><a href="runtimeValidator/README.md">runtimeValidator</a> - specs/(runtime, config)
+The <code>runtimeValidator</code> verifies if a runtime containers runs the bundle correctly, test its compliance to <a href="https://github.com/opencontainers/specs">opencontainers/specs</a>.</p>
+
+<p><a href="ociConvert/README.md">ociConvert</a> - convert from other container images
+So far, image configurations compliants to AppC spec could be converted into OCI configurations.</p>
+
+<p>Make OCT better
+We will also list other container testing tools here.
+Please tell us and update this file by using the following format:</p>
+
+<p>```
+<a href="tool url">tool name</a> - tool function
+tool description</p>
+
+<p>```</p>
+
+<p>OCT with Other project
+ OCT &amp; OCT-Engine
+It is very easy to <a href="https://github.com/huawei-openlab/oct-engine/blob/master/cases/README.md">write</a> a testcase under the OCT-engine.
+The testcase using bundleValidator as the testing tool is listed here:
+https://github.com/huawei-openlab/oct-engine/blob/master/cases/bundle/config.json</p>
+
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/05/09/oct-roadmap/">
+      OCT loadmap
+    </a>
+  </h2>
+  <span class="post-category">
+    <span class="label">
+      oct
+    </span>
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      09 May 2014
+    </span>
+    <a href="https://github.com/zenlinTechnofreak" class="post-author">
+      <img src="https://github.com/zenlinTechnofreak.png" class="avatar" alt="zenlinTechnofreak avatar" width="24" height="24">
+      zenlinTechnofreak
+    </a>
+  </div>
+  <div class="post-content">
+    <p>Roadmap</p>
+
+<p>This document defines the high-level goals of the ocp-testing project. See <a href="project-planning">Project Planning</a> for information on Releases.</p>
+
+<p>Long-term Goal</p>
+
+<p>Short-term Goals</p>
+
+<p>Project Planning</p>
+
+<p><a href="https://github.com/huawei-openlab/oct/wiki">Project Pages</a> define the goals for each Milestone.</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/05/09/oct-introduction/">
+      OCT introduction
+    </a>
+  </h2>
+  <span class="post-category">
+    <span class="label">
+      news
+    </span>
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      09 May 2014
+    </span>
+    <a href="https://github.com/liangchenye" class="post-author">
+      <img src="https://github.com/liangchenye.png" class="avatar" alt="liangchenye avatar" width="24" height="24">
+      liangchenye
+    </a>
+  </div>
+  <div class="post-content">
+    <p>OCT: Open Container Testing</p>
+
+<p>The OCT project aims to promote the <a href="http://www.opencontainers.org/">Open Container Initiative</a> by providing a universal open container testing <code>libs</code> or <code>tools</code>.</p>
+
+<p>OCT scope
+Following <a href="https://github.com/opencontainers/specs">the OCI Principles</a>: 
+OCT covers following areas:
+- <a href="tools/bundleValidator/README.md">Bundle Validator</a> verifies if a bundle was a <a href="standard-container">Standard Container</a>.
+- <a href="tools/runtimeValidator/README.md">Runtime Validator</a> verifies if a runtime runs the bundle <a href="compliant-runtime">correctly</a>.</p>
+
+<p>To make OCT easier, more tools are required:
+- OCI builder - build a native OCI bundle
+- <a href="tools/bundleValidator/README.md">OCI generator</a> - generate a minimal config.json/runtime.json
+- <a href="tools/oci-convert">OCI convert</a> - convert from other images, like rkt.</p>
+
+<p>Standard Container
+A standard container should be a <a href="https://github.com/opencontainers/specs/blob/master/bundle.md">bundle</a> with one standard ‘config.json’, one standard ‘runtime.json’ and one standard ‘rootfs’.</p>
+
+<p>Compliant Runtime
+A compliant runtime should be the one which could run a standard container <code>correctly</code>, either runs <code>directly</code> or <code>indirectly</code>.</p>
+
+<p><code>Correctly</code> means running by a runtime, all the mounts, uid, and other informations should be exactly same with what defined in config.json/runtime.json.</p>
+
+<p><code>Directly</code> means a runtime could run a standard container without any extra action, just like ‘runC’.</p>
+
+<p><code>Indirectly</code> means a runtime(runX) could not run a standard container directly. RunX needs to get a runX-bundle converted from an oci-bundle first and then runs runX-bundle. <a href="conversion-tools">Conversion tools</a></p>
+
+<p>Conversion tools
+One implementaion of converting from OCI to ACI is hosted at: <a href="https://github.com/huawei-openlab/oci2aci">oci2aci</a></p>
+
+<p>Getting Started</p>
+
+<ul>
+  <li>Fork the repository on GitHub</li>
+  <li>Read the ‘build and test instruction’ for <a href="tools/bundleValidator/README.md">Bundle Validator</a> and <a href="tools/runtimeValidator/README.md">Runtime Validator</a></li>
+  <li>Play with the project, submit bugs, submit patches!</li>
+</ul>
+
+<p>How to involve
+If any issues are encountered while using the oct project, several avenues are available for support:</p>
+<table>
+<tbody><tr>
+	<th align="left">
+	Issue Tracker
+	</th>
+	<td>
+	https://github.com/huawei-openlab/oct/issues
+	</td>
+</tr>
+<tr>
+	<th align="left">
+	Google Groups
+	</th>
+	<td>
+	https://groups.google.com/forum/!forum/oci-testing
+	</td>
+</tr>
+</tbody></table>
+
+<p>Who should join
+- Open Container project developer/user</p>
+
+<p>Changes
+The <code>engine</code> part is now moved to <a href="https://github.com/huawei-openlab/oct-engine">oct-engine</a>
+The <code>cases</code> part is now moved to <a href="https://github.com/huawei-openlab/oct-engine/cases">oct-engine/cases</a></p>
+
+  </div>
+</article>
+
+
+
+      </div>
+
+      <div class="clear"></div>
+
+    </div>
+  </section>
+
+      </div>
+
+    </div>
+
+    <div class="footer">
+	    <div class="separator-hr"></div>
+	    <div class="row">
+		    <div class="col-md-6">
+			    <span class="separator"></span>
+			    Join OCT
+			    <a href="https://github.com/huawei-openlab/oct/" class="btn btn-default btn-github"><i class="fa fa-github fa-1x"> </i></a>
+			    <a href="https://github.com/huawei-openlab/oct/blob/master/README.md" class="btn btn-default btn-docs"><i class="fa fa-file-text-o fa-1x"></i> </a>
+		    </div>
+		    <div class="col-md-6">
+			    <p class="copyright">Copyright<i class="fa fa-copyright"></i> 2015 Huawei Openlab. All Rights Reserved.</p>
+		    </div>
+	    </div>
+    </div>
+  
+
+</body></html>

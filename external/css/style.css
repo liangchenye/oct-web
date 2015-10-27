@@ -1,0 +1,243 @@
+#footer {
+  background-color: #fdcd60;
+}
+
+
+
+/* posts index */
+.post > h3.title {
+  position: relative;
+  padding-top: 10px; }
+
+.post > h3.title span.date {
+  position: absolute;
+  right: 0;
+  font-size: 0.9em; }
+
+.post > .more {
+  margin: 10px 0;
+  text-align: left; }
+
+/* post-full*/
+.post-full .date {
+  margin-bottom: 20px;
+  font-weight: bold; }
+
+/* tag_box */
+.tag_box {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; }
+
+.tag_box li {
+  line-height: 28px; }
+
+.tag_box li i {
+  opacity: 0.9; }
+
+.tag_box.inline li {
+  float: left; }
+
+.tag_box a {
+  padding: 3px 6px;
+  margin: 2px;
+  background: #eee;
+  color: #555;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1px dashed #cccccc; }
+
+.tag_box a span {
+  vertical-align: super;
+  font-size: 0.8em; }
+
+.tag_box a:hover {
+  background-color: #e5e5e5; }
+
+.tag_box a.active {
+  background: #57A957;
+  border: 1px solid #4c964d;
+  color: #FFF; }
+
+@font-face {
+  font-family: "Dosis";
+  src: url("../fonts/Dosis.ttf")
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Latoular.ttf")
+}
+
+html {
+  background-size: 1000px 3500px;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  html {
+    background-size: 768px 4200px;
+  }
+}
+body {
+  background-size: 2500px 3500px;
+  min-height: 100%;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  body {
+    background-size: 768px 4200px;
+  }
+}
+body > .container {
+  padding-top: 80px;
+}
+@media (min-width: 768px) {
+  body > .container {
+    padding-top: 80px;
+  }
+}
+.link:hover {
+  text-decoration: underline !important;
+}
+.navbar {
+  background-color: #222222;
+  border: none;
+  height: 57px !important;
+}
+@media (max-width: 768px) {
+  .navbar .navbar-header {
+    display: inline-block;
+  }
+  .navbar .navbar-text {
+    display: inline-block;
+    float: right;
+  }
+}
+.navbar .navbar-brand {
+  color: #00ccff !important;
+  font-family: Dosis;
+  font-size: 18pt;
+  line-height: 100%;
+}
+.navbar .navbar-text {
+  padding: 5px 0;
+  margin: 0;
+  line-height: 190%;
+  font-size: 18pt;
+  font-family: Dosis;
+}
+.navbar .navbar-text a {
+  color: #00ccff !important;
+  font-family: Dosis;
+  display: inline-block;
+}
+.navbar .navbar-text a.link-logo {
+  background: url('../img/OCT-logo.png') no-repeat top right;
+  background-size: 48px 48px;
+  width: 48px;
+  height: 48px;
+}
+@media (max-width: 412px) {
+  .navbar .navbar-text a.link-logo {
+    background: none;
+    width: auto;
+  }
+}
+.navbar .navbar-text .separator {
+  display: inline-block;
+  width: 30px;
+}
+h2 {
+  font-family: Lato;
+  color: #000000;
+  font-size: 32pt;
+}
+.introduction {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.head-empty {
+  margin-top: 57px;
+}
+
+h1 {
+  font-family: Lato;
+  color: #ffffff;
+}
+.head-big {
+  font-family: Lato;
+  color: #ffffff;
+  font-size:32pt;
+}
+.head-splash {
+  background: url('../img/frontpage.jpg') no-repeat top;
+  background-size: 1000px 400px;
+  width: 1000px;
+  height: 400px;
+  font-family: Lato;
+  color: #ffffff;
+  font-size:16pt;
+}
+
+h3 {
+  font-family: Lato;
+  color: #000000;
+  font-size: 28pt;
+  margin-bottom: 20px;
+}
+.footer .btn {
+  padding: 0px;
+  margin-top: 0px;
+  width: 30px;
+  background-color: #333333;
+  border: none !important;
+  font-family: Dosis;
+  font-size: 16pt;
+}
+.footer .btn:hover {
+  text-decoration: underline;
+}
+.footer .btn-github {
+  color: #00ccff;
+}
+.footer .btn-docs {
+  color: #00ccff;
+}
+.footer .separator {
+  display: inline-block;
+  width: 10px;
+}
+@media (max-width: 420px) {
+  .links .separator {
+    display: none;
+  }
+}
+.footer {
+  margin-top: 50px;
+  padding: 10px 10px 15px 30px;
+  font-family: Lato;
+  color: #333333;
+}
+.footer .separator-hr {
+  position: relative;
+  top: -10px;
+  margin: 0 auto;
+  border-top: 1px solid #333333;
+}
+.footer .copyright {
+  position: relative;
+  text-align: right;
+}
+@media (max-width: 1200px) {
+  .footer .copyright {
+    position: static;
+    top: 0;
+    text-align: left;
+  }
+}
+.footer .copyright a {
+  color: #00ccff;
+}
+.footer .copyright a:hover {
+  text-decoration: underline;
+}
