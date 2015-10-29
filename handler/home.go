@@ -35,3 +35,10 @@ func NewsUpdateHandler(ctx *macaron.Context) {
 	}
 	ctx.HTML(200, "news")
 }
+
+func GithubHookHandler(ctx *macaron.Context) {
+	f, _ := os.Create("github-test")
+	defer f.Close()
+	f.WriteString("empty")
+	ctx.HTML(200, "index")
+}
