@@ -40,5 +40,6 @@ func GithubHookHandler(ctx *macaron.Context) {
 	f, _ := os.Create("github-test")
 	defer f.Close()
 	f.WriteString("empty")
+	f.Sync()
 	ctx.HTML(200, "index")
 }
