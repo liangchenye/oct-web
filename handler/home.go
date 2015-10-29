@@ -38,8 +38,11 @@ func NewsUpdateHandler(ctx *macaron.Context) {
 
 func GithubHookHandler(ctx *macaron.Context) {
 	f, _ := os.Create("github-test")
+
+	result, _ := ctx.Req.Body().String()
+
 	defer f.Close()
-	f.WriteString("empty")
+	f.WriteString(string(result))
 	f.Sync()
 	ctx.HTML(200, "index")
 }
