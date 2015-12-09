@@ -78,7 +78,8 @@ html {
   }
 }
 body {
-  background-size: 2500px 3500px;
+  background: url('../img/oct-bg.png') no-repeat top left;
+  background-size: 1200px 2400px;
   min-height: 100%;
   margin: 0;
 }
@@ -151,10 +152,20 @@ h2 {
   color: #000000;
   font-size: 32pt;
 }
+
 .introduction {
   text-align: center;
-  margin-top: 20px;
-  height: 120px;
+  margin-top: 10px;
+  background-color: #093f6b;
+  width: 444px;
+  height: 67px;
+}
+
+.introduction h2 {
+  font-family: Lato;
+  color: #c4feff;
+  font-size: 32pt;
+  margin-top: 8px;
 }
 
 .head-empty {
@@ -171,13 +182,27 @@ h1 {
   font-size:32pt;
 }
 .head-splash {
-  background: url('../img/frontpage.jpg') no-repeat top;
-  background-size: 1000px 400px;
+  background: url('../img/frontpage.png') no-repeat top;
+  background-size: 800px 420px;
   width: 1000px;
   height: 400px;
   font-family: Lato;
   color: #ffffff;
   font-size:16pt;
+}
+
+.head-splash h1 {
+  font-family: Lato;
+  color: #ffffff;
+  margin-top: 120px;
+  margin-left: 500px;
+}
+
+.head-splash p {
+  font-family: Lato;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-left: 500px;
 }
 
 h3 {
